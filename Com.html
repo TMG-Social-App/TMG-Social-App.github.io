@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="DATA/CSTYLE.css">
+    <link rel="icon" href="DATA/TEXTURES/logo.png" type="image/x-icon">
+    <title>Chat Interface</title>
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <img src="DATA/TEXTURES/Logo_NoShade.png" alt="Site Logo" class="site-logo">
+            <h1 class="site-name">TMG</h1>
+            <button onclick="window.location.href = 'index.html';" class="btn btn-primary">🏠︎</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="chat-container">
+            <div class="chat-list">
+                <ul id="chat-rooms"></ul>
+            </div>
+            <div class="chat-display">
+                <div class="chat-header">
+                    <img src="DATA/TEXTURES/PFP.png" alt="Profile Picture" class="profile-pic">
+                    <span class="status-indicator online"></span>
+                    <h2 id="chat-room-name">Select a Chat Room</h2>
+                </div>
+                <div class="chat-messages" id="chat-messages">
+                    <!-- Messages dynamically populated -->
+                </div>
+                <div class="chat-input">
+                    <input type="text" id="message-input" placeholder="Type your message...">
+                    <button onclick="sendMessage()">Send</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="DATA/PAGES DATA/CS.js"></script>
+</body>
+</html>
